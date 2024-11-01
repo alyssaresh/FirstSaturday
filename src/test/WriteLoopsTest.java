@@ -10,118 +10,117 @@ import static org.junit.Assert.assertEquals;
  * @author  kyounger
  * @version 1.2
  */
-public class WriteLoopsTest
-{
+public class WriteLoopsTest {
     /**
      * Default constructor for test class src.test.java.WriteLoopsTest
      */
-    public WriteLoopsTest()
-    {
+    public WriteLoopsTest() {
     }
 
     /**
      * Sets up the test fixture.
-     *
+     * <p>
      * Called before every test case method.
      */
     @Before
-    public void setUp()
-    {
+    public void setUp() {
     }
 
     /**
      * Tears down the test fixture.
-     *
+     * <p>
      * Called after every test case method.
      */
     @After
-    public void tearDown()
-    {
+    public void tearDown() {
     }
 
 
     @Test
-    public void TestOneToFive()
-    {
+    public void TestOneToFive() {
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(5, writeLoo1.oneToFive());
     }
+
     @Test
-    public void TestOneToTen()
-    {
+    public void TestOneToTen() {
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(10, writeLoo1.oneToTen());
     }
+
     @Test
-    public void TestStartAtTwentyOne()
-    {
+    public void TestStartAtTwentyOne() {
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(11, writeLoo1.startAtTwentyOne());
     }
 
     @Test
-    public void TestCountDown()
-    {
+    public void TestCountDown() {
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(100, writeLoo1.countDown());
     }
 
     @Test
-    public void Test2to32()
-    {
+    public void Test2to32() {
         //error should be 17?
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(17, writeLoo1.byTwoTo32()); // error in source
     }
 
     @Test
-    public void TestCountDownFrom5000()
-    {
+    public void TestCountDownFrom5000() {
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(455, writeLoo1.countDownFrom5000());
     }
 
     @Test
-    public void TestNestedFors()
-    {
+    public void TestNestedFors() {
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(100, writeLoo1.nestedFors());
     }
 
     @Test
-    public void TestHelloZipCode()
-    {
+    public void TestHelloZipCode() {
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(47, writeLoo1.helloZipCode());
     }
 
     @Test
-    public void TestDriveHome()
-    {
+    public void TestDriveHome() {
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(6, writeLoo1.driveHome());
     }
 
 
-
     @Test
-    public void TestCheckGameScore()
-    {
+    public void TestCheckGameScore() {
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(true, writeLoo1.checkGameScore());
     }
 
     @Test
-    public void TestCheckGameScoreDoWhile()
-    {
+    public void TestCheckGameScoreDoWhile() {
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(false, writeLoo1.checkGameScoreDoWhile());
     }
 
     @Test
-    public void TestCheckServer()
-    {
+    public void TestCheckServer() {
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(3, writeLoo1.checkServerStatus());
     }
+
+    @Test
+    public void TestLoop50by7() {
+        WriteLoops writeLoo1 = new WriteLoops();
+        assertEquals(7, writeLoo1.loop50by7());
+    }
+
+
+    @Test
+    public void TestSumOfThreesFor() {
+        WriteLoops writeLoo1 = new WriteLoops();
+        assertEquals(7, writeLoo1.rewriteFooAsFor());
+    }
+
 }
